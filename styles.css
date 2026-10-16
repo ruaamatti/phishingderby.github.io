@@ -139,10 +139,16 @@ h3 {
 }
 
 .brand-logo {
-    width: 58px;
-    height: 58px;
-    object-fit: contain;
+    width: 100px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 6px 18px rgba(16,47,70,0.12);
+    background: var(--paper);
+    transition: transform 180ms ease, box-shadow 180ms ease;
 }
+
 
 .brand-name {
     font-family: var(--heading-font);
