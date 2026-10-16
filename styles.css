@@ -139,8 +139,8 @@ h3 {
 }
 
 .brand-logo {
-    width: 100px;
-    height: 64px;
+    width: 80px;
+    height: 54px;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid #fff;
@@ -148,6 +148,8 @@ h3 {
     background: var(--paper);
     transition: transform 180ms ease, box-shadow 180ms ease;
 }
+
+
 
 
 .brand-name {
@@ -242,8 +244,8 @@ h3 {
     min-height: 420px;
     padding-block: 58px 56px;
     align-items: center;
-    grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.6fr);
-    gap: 46px;
+    grid-template-columns: minmax(0, 1.2fr) 460px;
+    gap: 24px;
 }
 
 .hero-copy {
@@ -318,9 +320,12 @@ h3 {
 .hero-mark {
     display: grid;
     min-height: 260px;
+    width: 500px;
     padding: 28px;
     align-content: center;
     justify-items: center;
+    justify-self: start;
+    gap: 18px;
     overflow: hidden;
     border: 1px solid var(--line);
     border-radius: 8px;
@@ -332,15 +337,21 @@ h3 {
 }
 
     .hero-mark img {
-        width: min(100%, 280px);
-        height: 190px;
-        object-fit: contain;
+        width: 400px;
+        height: 370px;
+        max-height: 320px;
+        object-fit: cover;
+        border-radius: 15px;
+        background: var(--paper);
+        padding: 0;
+        box-shadow: 0 10px 24px rgba(16, 47, 70, 0.14);
+        border: 5px solid #fff;
     }
 
     .hero-mark p {
         margin: 0;
         padding: 5px 12px;
-        border-radius: 3px;
+        border-radius: 10px;
         background: var(--paper);
         color: var(--navy);
         font-family: var(--heading-font);
@@ -1165,6 +1176,24 @@ tbody tr:last-child td {
     }
 
 /* Tablet layout keeps every section in its original reading order. */
+@media (max-width: 1100px) {
+    .home-hero {
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.85fr);
+        gap: 28px;
+    }
+
+    .hero-mark {
+        width: 100%;
+    }
+
+        .hero-mark img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            max-height: 320px;
+        }
+}
+
 @media (max-width: 900px) {
     .header-inner {
         width: min(var(--content-width), calc(100% - 40px));
