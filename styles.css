@@ -320,7 +320,7 @@ h3 {
 .hero-mark {
     display: grid;
     min-height: 260px;
-    width: 500px;
+    width: 400px;
     padding: 28px;
     align-content: center;
     justify-items: center;
@@ -337,8 +337,8 @@ h3 {
 }
 
     .hero-mark img {
-        width: 400px;
-        height: 370px;
+        width: 500px;
+        height: 200px;
         max-height: 320px;
         object-fit: cover;
         border-radius: 15px;
